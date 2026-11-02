@@ -1,22 +1,24 @@
-const productName1 = "Latte";
-const productName2 = "Espresso";
+// console.log("POS STRATED");
+// console.warn("LOW STOCK");
+// console.error("CRITICAL ERROR PAYMENT");
 
-const unitPrice1 = 125;
-const unitPrice2 = 80;
+// console.table([
+//     {
+//         name:"latte", price:50
+//     },
+//     {
+//         name:"espresso", price:100
+//     },
+//     {
+//         name:"cappuccino", price:150
+//     }
+// ])
 
-const quantity1 = 2;
-const quantity2 = 3;
+const unitPrice = 125;
+let quantity = 2;
+const discount = 10;
 
-const invoiceDiscount = 25;
+const subtotal = unitPrice * quantity;
+const total = subtotal - discount;
 
-const subtotal1 = unitPrice1 * quantity1;
-const subtotal2 = unitPrice2 * quantity2;
-
-const invoiceSubtotal = subtotal1 + subtotal2;
-const grandTotal = invoiceSubtotal - invoiceDiscount;
-
-console.log("Latte:", subtotal1);
-console.log("Espresso:", subtotal2);
-console.log("Subtotal:", invoiceSubtotal);
-console.log("Discount:", invoiceDiscount);
-console.log("Grand Total:", grandTotal);
+console.log(total);
