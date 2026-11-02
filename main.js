@@ -1,17 +1,14 @@
-class Product {
-    constructor(name) {
-        this.name = name;
-    }
+const productname = "Coffe latte";
+const uniteprice = 125;
 
-    getName() {
-        return this.name;
-    }
-}
+let quantity = 2;
+let disscount = 10;
 
-const p1 = new Product("Keyboard");
-const p2 = new Product("Mouse");
+const subtotal = uniteprice * quantity;
+const total = subtotal - disscount;
 
-console.log(p1.getName());
-console.log(p2.getName());
-
-console.log(p1.getName === p2.getName);
+console.log("product : " + productname);
+console.log("product quantity : " + quantity);
+console.log("subtotal : " + subtotal);
+console.log("discount : " + disscount);
+console.log("total : " + total);
