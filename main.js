@@ -2,16 +2,17 @@
 Template Literarls [Template Strings]
 */
 
+let Title = "Karim"
+let Paragraph = "Ziad"
+let markUp = `
+<div class="card"> 
+    <div class="child">
+      <h1>${Title}<h1/>
+      <p>${Paragraph}</p>
+    </div>
+</div>
+`;
 
-let a = "we love";
-let b = "Java script";
-let c = "AND";
-let d = "Python";
 
 
-// console.log(a + " " + b +
-//     "\n" + c + " " + d
-// )
-
-console.log(`${a} ${b}
-     ${c} ${d}`)
+document.write(markUp)
