@@ -1,18 +1,18 @@
 /* 
-Template Literarls [Template Strings]
+Variables & Concatenation Challenge
 */
+let Title_Content = "Elzero",
+    Description_Content = "Elzero Web School",
+    Date_Content = "25/10";
 
-let Title = "Karim"
-let Paragraph = "Ziad"
 let markUp = `
-<div class="card"> 
-    <div class="child">
-      <h1>${Title}<h1/>
-      <p>${Paragraph}</p>
+    <div class="card">
+        <h3>${Title_Content}</h3>
+        <p>${Description_Content}</p>
+        <span>${Date_Content}</span>
     </div>
-</div>
 `;
 
+document.write(markUp.repeat(4));
 
 
-document.write(markUp)
