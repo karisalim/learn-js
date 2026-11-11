@@ -1,19 +1,16 @@
 /* 
-Template Literals
+Type Conversion
 */
-let Title_Content="Elzero",
-    Description_Content= "Elzero Web School",
-    Date_Content = "25/10";
 
-let markup = `
-    <div class="child-box">
-        <h3>${Title_Content}</h3>
-        <p>${Description_Content}</p>
-        <span>${Date_Content}</span>
-    </div>
-`;
+let value = true;
+alert(typeof value); // boolean
 
-document.write(markup.repeat(4));
+value = String(value); // now value is a string "true"
+alert(typeof value); // string
+
+
+
+
 
     
 
