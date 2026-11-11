@@ -16,15 +16,19 @@ Type Conversion
 
 
 
+let customer = {
+    id: 1,
+    name: "Ahmed"
+};
 
-let price = 125;
-let quantity = "3";
-
-const convertedQuantity = Number(quantity);
+// console.log(String(customer));  // "[object Object]"
 
 
-let total = convertedQuantity * 125;
-console.log(typeof(convertedQuantity));
-console.log(total);
+
+console.log(JSON.stringify(customer)) // '{"id":1,"name":"Ahmed"}'
+
+
+
+
 
 
